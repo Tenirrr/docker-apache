@@ -12,14 +12,14 @@ fi
 
 # Uruchom nowy kontener
 echo "Uruchamianie kontenera Apache..."
-docker run -d \
+docker run -d -it \
     --name $CONTAINER_NAME \
     --restart unless-stopped \
     -p 80:80 \
     -p 443:443 \
     -v $HOST_DIR/config:/etc/apache2 \
     -v $HOST_DIR/www:/var/www \
-    -v $HOST_DIR/logi:/var/log/apache2 \
+    -v $HOST_DIR/logs:/var/log/apache2 \
     -v /home/docker-user/certbot-ovh/letsencrypt/live/cives.pl:/etc/letsencrypt/live/cives.pl:ro \
     apache-alpine
 

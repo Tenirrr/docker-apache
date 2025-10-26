@@ -1,0 +1,2 @@
+[Sun Oct 26 16:34:32.065833 2025] [mpm_prefork:notice] [pid 23:tid 23] AH00163: Apache/2.4.65 (Unix) configured -- resuming normal operations
+[Sun Oct 26 16:34:32.065982 2025] [core:notice] [pid 23:tid 23] AH00094: Command line: 'httpd'
